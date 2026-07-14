@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eco Essentials – Home</title>
+
+<style>
+body {
+    margin: 0;
+    background: #d9e3d7;
+	font-family:Arial;
+}
+
+#topbar { 
+	background:#4c8c5a; 
+	color:white; 
+	font-size:15px; 
+	padding:8px; 
+	text-align:center; 	
+	padding-left:593px; 
+}
+
+#headerRow { 
+	display:flex; 
+	align-items:center;
+	background:#fdf8f0;
+	padding:15px;
+	
+}
+
+#webname {
+    padding-right:30px;
+    font-size: 32px;
+    color: #356647;
+}
+
+#searchBox {
+	width: 45%;
+	padding:10px;
+	border:2px solid #356647; 
+	border-radius:6px; 
+	margin-right:50px;
+}
+
+#loginBtn {
+    background: #2a8c68;
+    color: #fdf8f0;
+    padding: 8px 14px;
+    font-size: 15px;
+	margin-left: auto;
+}
+
+#loginBtn img {
+    width: 30px;
+    height: 30px;
+	vertical-align: middle;
+}
+
+#loginBtn:hover {
+    background: #1c6e4e;
+}
+
+#cartBtn {
+    background: #2a8c68;
+    color: #fdf8f0;
+    padding: 8px 14px;
+    font-size: 15px;
+	margin-left: 10px;
+}
+
+#cartBtn img {
+    width: 30px;
+    height: 30px;
+	vertical-align: middle;
+}
+
+#cartBtn:hover {
+    background: #1c6e4e;
+}
+
+#tokenTracker {
+    background: #4c8c5a; 
+    color: #fdf8f0;
+    padding: 10px 18px;
+	margin-right:20px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border: 1px solid #356647;
+}
+
+#tokenTracker b {
+    color: #fdf8f0;
+    margin-left: 4px;
+}
+
+
+#navbar { 
+	background:#2a8c68; 
+	padding:12px; 
+	text-align:center;
+}	
+
+#navbar a {
+	color:#fdf8f0; 
+	text-decoration:none; 
+	margin:0 18px; 
+	font-size:18px; 
+}
+
+#FP,#EC,#KE,#PC,#EB,#H,#AU,#C,#CH,#CA,#CFP {
+    color: white;
+}
+
+#KE:hover,#PC:hover,#EB:hover,#H:hover,#AU:hover,#C:hover,#CH:hover,#CA:hover,#CFP:hover  {
+    color: #FFDEAD;
+}
+#FP:hover,#EC:hover {
+	text-decoration:underline;
+}
+#BT {
+	border-radius:12px;
+}
+#BT:hover {
+    box-shadow: 0px 0px 15px;
+    border: 3px solid #356647; 
+	background-color: #FAF0E6;
+	color: black;
+	border-radius:12px;
+}
+
+#banner {
+	margin-left: 0;
+    width: 100%;
+    height: 350px;
+    background-image: url(https://imgs.search.brave.com/SynVgzR9cVs37cOuzjMaJJq4oB-WhuHHCvhZV21jR-0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzE1LzA3LzQwLzQx/LzM2MF9GXzE1MDc0/MDQxMDlfMUJPUkRY/QU1OVmdxc1c2ejNC/dVozZ2R6V29NOTFK/cGouanBn);
+	background-size: cover;
+	background-position: 5px;
+}
+
+#bannerText {
+    padding-top: 130px;
+    padding-left: 30px;
+    font-size: 42px;
+    color: #fdf8f0;
+    text-shadow: 1px 1px 10px black;
+}
+
+#sectionTitle {
+    font-size: 50px;
+    text-align: center;
+    color: #356647;
+}
+
+#products {
+    text-align: center;
+	border-radius:12px;
+}
+
+#products div {
+	display:inline-block;
+    width: 230px;
+    background: #fdf8f0;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    vertical-align: top;
+}
+
+#products img {
+    width: 100%;
+    height: 160px;
+}
+
+#products h3 {
+    font-size: 19px;
+    color: #356647;
+}
+
+#products p {
+    color: #5c4431;
+    font-size: 15px;
+}
+
+#products b {
+    color: #356647;
+    font-size: 18px;
+}
+
+#footer {
+    background: #4c8c5a;
+    color: white;
+    padding: 40px 20px;
+}
+
+#footer div {
+    display: inline-block;
+    width: 30%;
+	vertical-align: top;
+    padding: 10px;
+}
+
+#footer h4 {
+    font-size: 30px;
+}
+
+#footer p {
+    font-size: 17px;
+    line-height: 22px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+<div id="topbar">
+    Free Shipping on Eco Orders Above AED 100
+    
+    <a id="H" href="#home" style=" margin-left:400px; margin-right:10px;">Home</a>
+    <a id="AU" href="#about" style="margin-right:10px;">About Us</a>
+    <a id="C"  href="#footer">Contact</a>
+</div>
+
+<!-- HEADER -->
+<div id="headerRow">
+    <div id="webname"><b>Eco Essentials</b></div>
+	<div id="tokenTracker">
+        <span style="font-size: 20px;">🍃</span>
+        EcoTokens: <b>0</b>
+    </div>
+     <img src="https://imgs.search.brave.com/S2yJucwzTBzrqnjUS4KwW6Y0u0IxHoHGOvBlaHpNzmA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3NlYXJjaC1wbmcv/c2VhcmNoLWljb24t/dHJhbnNwYXJlbnQt/aW1hZ2VzLXZlY3Rv/ci0xNi5wbmc" style=" width:35px; vertical-align:bottom;">
+    <input id="searchBox" type="text" placeholder="Search products.." onkeyup="filterProducts()">
+       <a href="Login_Signup.php"><button id="loginBtn"><img src="https://imgs.search.brave.com/aO2aoX9BjUJWAGr3l-0w_KVf5c1gXvnfefGlOTvp6Cw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYXJ0cy5jb20v/ZmlsZXMvMTAvRGVm/YXVsdC1Qcm9maWxl/LVBpY3R1cmUtVHJh/bnNwYXJlbnQtSW1h/Z2UucG5n"> Login / Signup</button></a>
+       <a href="cart.php"><button id="cartBtn"><img src="https://imgs.search.brave.com/R1t8bmbczM6Oms6fIttCGSmfMAfSbQOQlNwk8PI7kEM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTkv/NjYwLzcyNi9zbWFs/bC9zaG9wcGluZy1j/YXJ0LWljb24tb24t/dHJhbnNwYXJlbnQt/YmFja2dyb3VuZC1m/cmVlLXBuZy5wbmc">Cart</button></a>
+</div>
+<!-- NAV BAR -->
+<div id="navbar">
+	<a id="FP" href="index.php">Home</a>
+	<a id="EC" href="products.php">All Products</a>
+</div>
+
+<!-- HERO BANNER -->
+<div id="banner">
+    <div id="bannerText">Sustainable Living Starts Here.</div>
+</div>
+
+<!-- FEATURED PRODUCTS -->
+<h2 id="sectionTitle">Best Sellers</h2>
+
+<div id="products">
+    <a href="Bamboo_Toothbrush.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/KOz8Vwo5Eaem3vOlKz-D3nkn8UGOxssSX-4J7mbbidY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YnJ1c2h3aXRoYmFt/Ym9vLmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxOC8wMS9h/ZHVsdC1zaW5nbGUt/bm8tY2VydC5qcGc">
+        <h3>Bamboo Toothbrush</h3>
+        <p>Biodegradable handle</p>
+        <b>AED 3.99</b>
+    </div></a>
+    <a href="Glass_Lunch_Box.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/6JvQ7kVvuRSptOvtCK-h-7LccaRVpFfitM4L2lTU6mE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb3Jw/b3JhdGUudHJlYXRy/ZXB1YmxpYy5jb20v/Y2RuL3Nob3AvZmls/ZXMvbW82OTczLTIy/LXNpZGVfNDk5OWM0/YmQtYWZhMy00NWJi/LTg1ZTItYWQwMzU0/M2E5MmNiLmpwZz92/PTE3NDEyMDExMTMm/d2lkdGg9NzAw">
+        <h3>Glass Lunch Box</h3>
+        <p>With Bamboo Lid</p>
+        <b>AED 11.99</b>
+    </div></a>
+    <a href="Cutlery_Set.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/lX24U-aC4hHHx0x5NP3d18vEPZolSybNu5A6duH8JNI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z2lmdHNmaW5kZXIu/Y28udWsvY2RuL3No/b3AvZmlsZXMvQmFt/Ym9vX0N1dGxlcnlf/U2V0X2luX2dpZnRf/Y2F0ZWdvcnlfLTIz/NTgwMjZfNTczNDAy/ZDgtYjM1MC00ZTA5/LWI5MWMtZmQ3MDBk/YjNmMDAyLmpwZz92/PTE3MzE0ODk0MzMm/d2lkdGg9NzIw">
+        <h3>Cutlery Set</h3>
+        <p>Made out of Bamboo</p>
+        <b>AED 7.75</b>
+    </div>
+    <a href="Natural_Deodorant.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/Y8UYzUGEe1p0Xhta46vTPgpD_sITPm1Ysxhh4vroba0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c2Ftc25hdHVyYWwu/Y29tL2Nkbi9zaG9w/L3Byb2R1Y3RzL1Nh/Z2VfTGltZV9icmln/aHRfOTAweC5qcGc_/dj0xNTA4NTIxNzY4">
+        <h3>Natural Deodorant</h3>
+        <p>Made of 100% natural materials</p>
+        <b>AED 4.49</b>
+    </div></a>
+	<br>
+    <a href="Reusable_Steel_Straws.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/CiP_TeC-YZiH23JIqmlF0w90OXxoOiO0Hwql41ejIYU/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9icm93/bmxpdmluZy5pbi9j/ZG4vc2hvcC9wcm9k/dWN0cy9zdGVlbC1z/dHJhd3MtcmV1c2Fi/bGUtc3RyYXdzLTIt/YmVudC0yLXN0cmFp/Z2h0LTEtY2xlYW5l/ci0xLXBvdWNoLWVj/by1mcmllbmRseS1z/dHJhd3MtdGJiLTY2/LXN0cmF3LWJyb3du/LWxpdmluZy00NTU5/MDcuanBnP3Y9MTY4/Mjk2ODI5MCZ3aWR0/aD0xMTAw">
+        <h3>Reusable Steel Straws</h3>
+        <p>With Cleaner</p>
+        <b>AED 5.99</b>
+    </div></a>
+    <a href="Beeswax_Wraps.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/-MfreKA56mbZJi3SR_yo1-1_9nmSo0il327M_m-Mgr0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHJl/ZWh1Z2dlcnMuY29t/L2Nkbi9zaG9wL2Zp/bGVzL0lNRy00NDQ0/LmpwZz92PTE3NTg3/MzAwMTkmd2lkdGg9/NTMz">
+        <h3>Beeswax Wraps</h3>
+        <p>Plastic-free food storage</p>
+        <b>AED 7.25</b>
+    </div></a>
+    <a href="Steel_Water_Bottle.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/y4GNV9aBRq_rU2_K4pg7LuFt0hb8Hh4EK50S8ZGr7Oc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTYv/ODUwLzQ3Mi9zbWFs/bC93aGl0ZS1wbGFz/dGljLXdhdGVyLWJv/dHRsZS1vbi10YWJs/ZS13aXRoLWdyYXkt/YmFja2dyb3VuZC1w/aG90by5qcGc">
+        <h3>Steel Water Bottle</h3>
+        <p>14 Hours Hot/Cold</p>
+        <b>AED 12.99</b>
+    </div></a>
+    <a href="Biodegradable_Trash_Bags.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/Lx3PFfoKnAPZurj5lOxgBfoaYEwz1C1BOOYdxXr5duo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFtdmlCSFdkREwu/anBn">
+        <h3>Biodegradable Trash Bags</h3>
+        <p>Eco-Friendly</p>
+        <b>AED 6.49</b>
+    </div></a>
+	<br>
+    <a href="Coconut_Brush.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/_79udSFvPVReGIVKoc_7gJwflh8osNc_oNt5qWlzQ2A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjF2UUdQTG5Na0wu/anBn">
+        <h3>Coconut Brush</h3>
+        <p>Biodegradable</p>
+        <b>AED 4.50</b>
+    </div></a>
+    <a href="Reusable_Coffee_Cup.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/kUioA7KauGV6PMEuTNcE2YIC_HYXVSK_pInmwMEZzrc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG90dGVyeWZvcnRo/ZXBsYW5ldC5jb20v/Y2RuL3Nob3AvZmls/ZXMvaGFuZG1hZGUt/cmV1c2FibGUtY29m/ZmVlLWN1cC1zcGVj/a2xlZC13aGl0ZS1s/aWQtc2lkZS1oYW5k/XzEwMjR4MTAyNC5q/cGc_dj0xNzU0MzYw/Nzgw">
+        <h3>Reusable Coffee Cup</h3>
+        <p>Insulated</p>
+        <b>AED 8.99</b>
+    </div></a>
+    <a href="Shampoo_Bar.php"><div id="BT">
+        <img src="https://imgs.search.brave.com/fkSITi05k-kmdk1PNpnEXDA0LXFC2pzGxKh5JC4zU98/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YnlyZGllLmNvbS90/aG1iL092WjhHU1FI/VTNXWjhsbGpLVG8x/RHBrMmpmZz0vZml0/LWluLzE1MDB4MTA4/MC9maWx0ZXJzOm5v/X3Vwc2NhbGUoKTpt/YXhfYnl0ZXMoMTUw/MDAwKTpzdHJpcF9p/Y2MoKS9Hb29kSnVq/dV8tQWx0UHJvZHVj/dEltYWdlcy1TaGFt/cG9vQmFyLURyeS0w/YTZjZTFkMDg1MDM0/NThkYTgxNzZhODkw/YTJjOTgwYy5qcGc">
+        <h3>Shampoo Bar</h3>
+        <p>Chemical-free & natural</p>
+        <b>AED 7.99</b>
+    </div></a>
+<br><br><br>
+
+</div>
+
+</div>
+<!-- ABOUT US SECTION -->
+<div id="about" style="background-image:url('https://imgs.search.brave.com/XMCbaI6yWIRNr_4MUFJ5NjIpXC5hm6H5f6V_JS01RB8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDYv/OTQyLzA0Mi9zbWFs/bC9yZWN5Y2xlLXN5/bWJvbC1lY28tZnJp/ZW5kbHktZ3JlZW4t/YmFja2dyb3VuZC1w/aG90by5qcGc'); background-size:cover; background-position:center; color:white;padding:150px 100px 220px 100px; text-align:center;">
+    <h2 style="font-size:48px; margin-bottom:30px;">About Us</h2>
+    <p style="font-size:20px; max-width:800px; margin:auto;">
+        Eco Essentials is committed to providing sustainable, eco-friendly products that make a difference. 
+        We believe in creating a greener future by offering items that reduce waste and promote a healthier planet.
+    </p>
+    <p style="font-size:20px; max-width:800px; margin:auto; margin-top:20px; line-height:1.8;">
+        From biodegradable household products to reusable personal care items, our goal is to empower conscious choices. 
+        Join us on our mission to live sustainably without compromising on quality or convenience.
+    </p>
+    <p style="font-size:20px; max-width:800px; margin:auto; margin-top:20px; line-height:1.8;">
+        Every purchase you make contributes to a positive impact on the environment. Together, we can make everyday living more sustainable and meaningful.
+    </p>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+    <div>
+        <h4>Eco Essentials</h4>
+        <p>Your one-stop store for planet-friendly products that help reduce waste and encourage sustainable living.</p>
+    </div>
+
+    <div>
+        <h4>Quick Links</h4>
+        <a id="CH" href="#topbar"><p>Home</p></a>
+        <a id="CA" href="#about"><p>About Us</p></a>
+        <a id="CFP" href="#sectionTitle"><p>Best Sellers</p></a>
+    </div>
+
+    <div>
+        <h4>Contact Us</h4>
+        <p>Email:ecoessentials4221@gmail.com</p>
+        <p>Phone: +971 55 123 4567</p>
+        <p>Dubai, UAE</p>
+    </div>
+	<div>
+		<h4>Follow Us</h4>
+		<a href="https://www.facebook.com/ecoessentials/"><img src="https://imgs.search.brave.com/3ES5BmktMn4bLLc9V_sOUz7x4bhNrLzDOzyLvhoEOcI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/d2JsaWJyYXJ5Lm9y/Zy9zaXRlLWFzc2V0/cy9pbWFnZXMvZmFj/ZWJvb2stbG9nby9A/QGltYWdlcy9pbWFn/ZS5wbmc" style="width:50px; height:50px;"></a>
+		<a href="https://www.instagram.com/ecoessentials/"><img src="https://imgs.search.brave.com/d78JnQFAA9C3Oi4AaUL9KL3XsR60v56fiubHYeYbZnQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/aW5zdGFncmFtLWxv/Z29fMTE5OS0xMjIu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MCZxPTgw" style="width:50px; height:50px;"></a>
+		<a href="https://x.com/Ecoessen4221"><img src="https://imgs.search.brave.com/fvziOwvxQobEVlhWEGWXApUWwk4yURRiypLBmhfxpFQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IveC1zb2NpYWwt/bWVkaWEtbG9nby1k/ZXNpZ25fOTgwMjAz/LTExNS5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQwJnE9ODA" style="width:50px; height:50px;"></a>
+	</div>
+</div>
+
+<script>
+function filterProducts() {
+    const searchText = document.getElementById("searchBox").value.toLowerCase(); 
+    const productCards = document.querySelectorAll('#products > a > [id="BT"]');
+    
+    productCards.forEach(card => {
+        const productText = card.textContent.toLowerCase();
+
+        if (productText.includes(searchText)) {
+            card.style.display = 'inline-block';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
+<script>
+function updateTokenDisplay() {
+    let tokens = localStorage.getItem('ecoTokens') || 0;
+    const tracker = document.querySelector('#tokenTracker b');
+    if (tracker) {
+        tracker.innerText = tokens;
+    }
+}
+
+updateTokenDisplay();
+</script>
+</body>
+</html>

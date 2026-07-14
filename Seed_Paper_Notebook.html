@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Eco Essentials – Seed Papaer Notebook</title>
+<style>
+body { 
+	margin:0; 
+	font-family:Arial; 
+	background:#d9e3d7; 
+}
+
+#topbar { 
+	background:#4c8c5a; 
+	color:white; 
+	font-size:15px; 
+	padding:8px; 
+	text-align:center; 	
+	padding-left:566px; 
+}
+
+#headerRow { 
+	display:flex; 
+	align-items:center;
+	background:#fdf8f0;
+	padding:15px;
+	
+}
+
+#logo { 
+	font-size:32px; 
+	font-weight:bold; 
+	color:#356647; 
+}
+
+#searchBox {
+	width: 45%;
+	padding:10px;
+	border:2px solid #356647; 
+	border-radius:6px;
+	margin-right:30px;
+}
+
+#loginBtn { 
+	background: #2a8c68; 
+	color: #fdf8f0; 
+	padding: 8px 14px; 
+	font-size: 15px; 
+	margin-left: auto; 
+}
+
+#loginBtn img { 
+	width: 30px; 
+	height: 30px; 
+	vertical-align: middle; 
+}
+
+#loginBtn:hover { 
+	background: #1c6e4e; 
+}
+
+#cartBtn { 
+	background: #2a8c68; 
+	color: #fdf8f0; 
+	padding: 8px 14px; 
+	font-size: 15px; 
+	margin-left:10px; 
+}
+
+#cartBtn img { 
+	width: 30px;
+	height: 30px; 
+	vertical-align: middle; 
+}
+
+#cartBtn:hover { 
+	background: #1c6e4e; 
+}
+
+#tokenTracker {
+    background: #4c8c5a; 
+    color: #fdf8f0;
+    padding: 10px 18px;
+	margin-right:20px;
+    font-size: 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border: 1px solid #356647;
+}
+
+#tokenTracker b {
+    color: #fdf8f0;
+    margin-left: 4px;
+}
+
+#navbar { 
+	background:#2a8c68; 
+	padding:12px; 
+	text-align:center; 
+}
+
+#navbar a { 
+	color:#fdf8f0; 
+	text-decoration:none; 
+	margin:0 18px; 
+	font-size:18px; 
+}
+
+#navbar a:hover { 
+	text-decoration:underline; 
+}
+
+#H,#AU,#C,#CH,#CA,#CFP { 
+	color:white 
+	
+}
+#H:hover,#AU:hover,#C:hover,#CH:hover,#CA:hover,#CFP:hover { 
+	color: #FFDEAD; 
+}
+
+#footer {
+    background: #4c8c5a;
+    color: white;
+    padding: 40px 20px;
+}
+
+#footer div {
+    display: inline-block;
+    width: 30%;
+	vertical-align: top;
+    padding: 10px;
+}
+
+#footer h4 {
+    font-size: 30px;
+}
+
+#footer p {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+#productContainer {
+    display: flex;
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #fdf8f0;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#productImage {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+#productImage img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+#productDetails {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+#productDetails h1 {
+    font-size: 36px;
+    color: #356647;
+    margin-top: 0;
+}
+
+.saleTag {
+    background: #e74c3c;
+    color: white;
+    padding: 4px 8px;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.priceContainer {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: baseline;
+}
+
+.originalPrice {
+    font-size: 20px;
+    color: #888;
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+
+.salePrice {
+    font-size: 30px;
+    font-weight: bold;
+    color: #2a8c68;
+}
+
+#description p {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.quantityControl {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.quantityControl label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #356647;
+}
+
+.quantityControl input {
+    width: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#addToCartBtn {
+    background: #2a8c68;
+    color: #fdf8f0;
+    padding: 12px 30px;
+    font-size: 18px;
+	vertical-align:middle;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#addToCartBtn:hover {
+    background: #1c6e4e;
+}
+
+#EcoTokensBtn {
+    background: #2a8c68;
+    color: #fdf8f0;
+    padding: 11px 30px;
+	margin-left:20px;
+	vertical-align:middle;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+#EcoTokensBtn:hover {
+    background: #1c6e4e;
+}
+
+</style>
+</head>
+<body>
+
+<div id="topbar">
+    Free Shipping on Eco Orders Above AED 100
+    
+    <a id="H" href="index.php" style=" margin-left:365px; margin-right:10px;">Home</a>
+    <a id="AU" href="index.php#about" style="margin-right:1px;">About Us</a>
+    <a id="C"  href="#footer">Contact</a>
+</div>
+
+<div id="headerRow">
+  <div id="logo" style="padding-right:30px">Eco Essentials</div>
+	<div id="tokenTracker">
+        <span style="font-size: 20px;">🍃</span>
+        EcoTokens: <b>0</b>
+    </div>
+  <img src="https://imgs.search.brave.com/S2yJucwzTBzrqnjUS4KwW6Y0u0IxHoHGOvBlaHpNzmA/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/ZnJlZXBuZ2xvZ29z/LmNvbS91cGxvYWRz/L3NlYXJjaC1wbmcv/c2VhcmNoLWljb24t/dHJhbnNwYXJlbnQt/aW1hZ2VzLXZlY3Rv/ci0xNi5wbmc" style=" width:35px; vertical-align:bottom;">
+  <input id="searchBox" type="text" placeholder="Search products..." onkeyup="filterProducts()">
+  <a href="Login_Signup.php"><button id="loginBtn"><img src="https://imgs.search.brave.com/aO2aoX9BjUJWAGr3l-0w_KVf5c1gXvnfefGlOTvp6Cw/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/cG5nYXJ0cy5jb20v/ZmlsZXMvMTAvRGVm/YXVsdC1Qcm9maWxl/LVBpY3R1cmUtVHJh/bnNwYXJlbnQtSW1h/Z2UucG5n"> Login / Signup</button></a>
+  <a href="cart.php"><button id="cartBtn"><img src="https://imgs.search.brave.com/R1t8bmbczM6Oms6fIttCGSmfMAfSbQOQlNwk8PI7kEM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTkv/NjYwLzcyNi9zbWFs/bC9zaG9wcGluZy1j/YXJ0LWljb24tb24t/dHJhbnNwYXJlbnQt/YmFja2dyb3VuZC1m/cmVlLXBuZy5wbmc">Cart</button></a>
+</div>
+
+<div id="navbar">
+  <a href="index.php">Home</a>
+  <a href="products.php">All Products</a>
+</div>
+
+
+<div id="productContainer">
+    
+    <div id="productImage">
+        <img src="https://imgs.search.brave.com/GKmisE3n1X04DvYUvCt53WsqRz4MXRFy6-qcvEmIWfs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3JlZW5naXZpbmcu/ZXUvc3RvcmFnZS9f/dGh1bWJzLzUwMHg0/MDAvUHJvZHVjdGVu/L05vdGl0aWVib2Vr/amVzLzEwX0xUOTI1/MjdfTjAwNTJfMS5q/cGc" style="padding-top:50px;">
+    </div>
+
+    <div id="productDetails">
+        <h1>Seed Paper Notebook</h1>
+        
+        <div class="priceContainer">
+            <span class="salePrice">AED 3.49</span>
+        </div>
+        
+        <div id="description">
+            <p><b>Small Notebook Made with Recycled Seed Paper Material</b></p>
+            <p>This small, stylish notebook is perfect for everyday use, featuring high-quality paper made from recycled post-consumer waste. The cover uses unique 'seed paper' material, giving it a distinctive, textured look, perfect for those seeking sustainable stationery without compromising on quality for writing, sketching, or journaling. It's a great choice for eco-conscious notes.</p>
+            <ul>
+                <li><b>Paper Type:</b> Recycled paper interior with seed paper aesthetic cover.</li>
+                <li><b>Material:</b> Sustainable and recycled content throughout.</li>
+                <li><b>Size:</b> Compact and easy to carry for notes on the go.</li>
+                <li><b>Use:</b> Perfect for notes, sketching, and eco-friendly gifts.</li>
+            </ul>
+        </div>
+
+        <div class="quantityControl">
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+
+        <button id="addToCartBtn" onclick="addToCart('Seed Paper Notebook', 3.49,'https://imgs.search.brave.com/GKmisE3n1X04DvYUvCt53WsqRz4MXRFy6-qcvEmIWfs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/Z3JlZW5naXZpbmcu/ZXUvc3RvcmFnZS9f/dGh1bWJzLzUwMHg0/MDAvUHJvZHVjdGVu/L05vdGl0aWVib2Vr/amVzLzEwX0xUOTI1/MjdfTjAwNTJfMS5q/cGc')">Add to Cart</button>
+        <button id="EcoTokensBtn">Buy with 50 🍃 Eco Tokens</button>
+        </div>
+
+</div>
+
+
+<div id="footer">
+    <div>
+        <h4>Eco Essentials</h4>
+        <p>Your one-stop store for planet-friendly products that help reduce waste and encourage sustainable living.</p>
+    </div>
+
+    <div>
+        <h4>Quick Links</h4>
+        <a id="CH" href="index.php"><p>Home</p></a>
+        <a id="CA" href="index.php#about"><p>About Us</p></a>
+        <a id="CFP" href="index.php#sectionTitle"><p>Best Sellers</p></a>
+    </div>
+
+    <div>
+        <h4>Contact Us</h4>
+        <p>Email:ecoessentials4221@gmail.com</p>
+        <p>Phone: +971 55 123 4567</p>
+        <p>Dubai, UAE</p>
+    </div>
+	<div>
+		<h4>Follow Us</h4>
+		<a href="https://www.facebook.com/ecoessentials/"><img src="https://imgs.search.brave.com/3ES5BmktMn4bLLc9V_sOUz7x4bhNrLzDOzyLvhoEOcI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/d2JsaWJyYXJ5Lm9y/Zy9zaXRlLWFzc2V0/cy9pbWFnZXMvZmFj/ZWJvb2stbG9nby9A/QGltYWdlcy9pbWFn/ZS5wbmc" style="width:50px; height:50px;"></a>
+		<a href="https://www.instagram.com/ecoessentials/"><img src="https://imgs.search.brave.com/d78JnQFAA9C3Oi4AaUL9KL3XsR60v56fiubHYeYbZnQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/aW5zdGFncmFtLWxv/Z29fMTE5OS0xMjIu/anBnP3NlbXQ9YWlz/X2h5YnJpZCZ3PTc0/MCZxPTgw" style="width:50px; height:50px;"></a>
+		<a href="https://x.com/Ecoessen4221"><img src="https://imgs.search.brave.com/fvziOwvxQobEVlhWEGWXApUWwk4yURRiypLBmhfxpFQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS12ZWN0/b3IveC1zb2NpYWwt/bWVkaWEtbG9nby1k/ZXNpZ25fOTgwMjAz/LTExNS5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQwJnE9ODA" style="width:50px; height:50px;"></a>
+	</div>
+</div>
+<script>
+function updateTokenDisplay() {
+    let tokens = localStorage.getItem('ecoTokens') || 0;
+    const tracker = document.querySelector('#tokenTracker b');
+    if (tracker) {
+        tracker.innerText = tokens;
+    }
+}
+
+function addToCart(name, price, image) {
+    let cart = JSON.parse(localStorage.getItem('ecoCart')) || [];
+    let qty = parseInt(document.getElementById('quantity').value);
+    
+    let existingItem = cart.find(item => item.name === name);
+    if (existingItem) {
+        existingItem.quantity += qty;
+    } else {
+        cart.push({ name: name, price: parseFloat(price), image: image, quantity: qty });
+    }
+    
+    localStorage.setItem('ecoCart', JSON.stringify(cart));
+    alert(name + " added to cart!");
+}
+
+document.getElementById('EcoTokensBtn').onclick = function() {
+    let tokens = parseInt(localStorage.getItem('ecoTokens')) || 0;
+    
+    if (tokens >= 50) {
+        let newBalance = tokens - 50;
+        localStorage.setItem('ecoTokens', newBalance);
+        
+        updateTokenDisplay();
+        
+        alert("Success! Redirecting to the redemption form...");
+        window.location.href = "redeem.php";
+    } else {
+        alert("Not enough tokens! You need 50 🍃 to redeem this item, but you only have " + tokens);
+    }
+};
+
+updateTokenDisplay();
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login | Eco Essentials</title>
+<style>
+body{background:#d9e3d7;font-family:Arial;}
+.box{
+ width:360px;margin:100px auto;background:#fdf8f0;
+ padding:30px;border-radius:12px;box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+h2{text-align:center;color:#356647;}
+input{
+ width:100%;padding:10px;margin:10px 0;
+ border:2px solid #356647;border-radius:6px;
+}
+button{
+ width:100%;padding:12px;background:#2a8c68;
+ color:white;border:none;border-radius:8px;font-size:16px;
+}
+button:hover{background:#1c6e4e;}
+.link{text-align:center;margin-top:10px;cursor:pointer;color:#2a8c68;}
+.hidden{display:none;}
+</style>
+
+<script>
+function toggle(){
+ document.getElementById("login").classList.toggle("hidden");
+ document.getElementById("signup").classList.toggle("hidden");
+}
+</script>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Eco Essentials</h2>
+
+<div id="login">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<a href="index.php"><button>Login</button></a>
+<div class="link" onclick="toggle()">Create Account</div>
+</div>
+
+<div id="signup" class="hidden">
+<input type="text" placeholder="Full Name">
+<input type="email" placeholder="Email">
+<input type="password" placeholder="Password">
+<a href="index.php"><button>Sign Up</button></a>
+<div class="link" onclick="toggle()">Back to Login</div>
+</div>
+
+</div>
+
+</body>
+</html>
