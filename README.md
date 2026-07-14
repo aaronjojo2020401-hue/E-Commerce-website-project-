@@ -12,22 +12,22 @@ The platform features a complete shopping experience, including a dynamic cart s
 🌍 Environmentally themed design promoting sustainable shopping<br>
 🌿 Eco Token System
 
-One of the standout features of this project is the Eco Token reward system:
+One of the standout features of this project is the Eco Token reward system:<br>
 
-Users earn eco tokens with every purchase
-Tokens act as a virtual currency within the platform
-Accumulated tokens can be used to redeem products for free
+Users earn eco tokens with every purchase<br>
+Tokens act as a virtual currency within the platform<br>
+Accumulated tokens can be used to redeem products for free<br>
 
-This feature was designed to simulate a rewards-based system that encourages eco-conscious purchasing behavior.
+This feature was designed to simulate a rewards-based system that encourages eco-conscious purchasing behavior.<br>
 
 👥 Team Contribution
 
-This was a group project completed with three other team members. I played a key role in:
+This was a group project completed with three other team members. I played a key role in:<br>
 
-Developing the overall website structure
-Implementing product pages and UI components
-Contributing to the cart system and token logic
-🛠️ Technologies Used
-HTML
-CSS
+Developing the overall website structure<br>
+Implementing product pages and UI components<br>
+Contributing to the cart system and token logic<br>
+🛠️ Technologies Used<br>
+HTML<br>
+CSS<br>
 JavaScript
