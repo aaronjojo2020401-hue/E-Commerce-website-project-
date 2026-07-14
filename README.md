@@ -4,12 +4,12 @@ This project was developed during my first year alongside three teammates as par
 
 The platform features a complete shopping experience, including a dynamic cart system and multiple interconnected pages. In total, we implemented 37 unique products, each with its own dedicated product page containing detailed information and interactive elements.
 
-🔑 Key Features
-🏠 Homepage showcasing featured eco-friendly products
-🔐 Login system for user access and session interaction
-🛒 Fully functional cart system allowing users to add, remove, and manage items
-📦 37 individual product pages, each uniquely designed
-🌍 Environmentally themed design promoting sustainable shopping
+🔑 Key Features<br>
+🏠 Homepage showcasing featured eco-friendly products<br>
+🔐 Login system for user access and session interaction<br>
+🛒 Fully functional cart system allowing users to add, remove, and manage items<br>
+📦 37 individual product pages, each uniquely designed<br>
+🌍 Environmentally themed design promoting sustainable shopping<br>
 🌿 Eco Token System
 
 One of the standout features of this project is the Eco Token reward system:
