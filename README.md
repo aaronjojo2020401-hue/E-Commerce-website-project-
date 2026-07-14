@@ -27,6 +27,7 @@ This was a group project completed with three other team members. I played a key
 Developing the overall website structure<br>
 Implementing product pages and UI components<br>
 Contributing to the cart system and token logic<br>
+
 🛠️ Technologies Used<br>
 HTML<br>
 CSS<br>
